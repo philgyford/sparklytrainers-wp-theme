@@ -7,7 +7,7 @@ It adds:
 * A custom post type called 'Reviews'.
 * A category-style taxonomy called 'Genres', used only with Reviews.
 * A tag-style taxonomy called 'Authors', used only with Reviews.
-* Date-based URLs for Reviews and slug-based reviews for the taxonomies:
+* Date-based URLs for Reviews and slug-based URLs for the taxonomies:
 
 		/reading/2017/02/19/post-name/  # A single Review.
 		/reading/2017/02/19/            # Reviews from one day.
