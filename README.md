@@ -18,7 +18,7 @@ It adds:
 		/reading/author/author-name/    # Reviews by an Author.
 
 * Standard Posts (with Categories and Tags) can still be used as a separate
-	blog.
+	blog on the same site; Posts and Reviews have parallel page structures.
 * The front page of the site will display the most recent Posts and Reviews
 	combined.
 
