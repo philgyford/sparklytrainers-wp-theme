@@ -94,3 +94,56 @@ body:not(.custom-background-image):before, body:not(.custom-background-image):af
 	padding-top: 0;
 	padding-bottom: 0;
 }
+
+
+/**
+ * Override twentysixteen putting the entry footer on the left of the entry
+ * text.
+ */
+
+/**
+ * 14.4 - >= 985px
+ */
+
+@media screen and (min-width: 61.5625em) {
+
+	body:not(.search-results) article:not(.type-page) .entry-content {
+		float: none;
+		width: auto;
+	}
+
+	body:not(.search-results) article:not(.type-page) .entry-footer {
+		float: none;
+		margin-top: 2.1538461538em;
+		width: auto;
+	}
+
+	body:not(.search-results) article:not(.type-page) .entry-footer > span:not(:last-child):after {
+		display: inline;
+	}
+
+	.single .byline,
+	.full-size-link,
+	body:not(.search-results).group-blog .byline,
+	body:not(.search-results) .entry-format,
+	body:not(.search-results) .cat-links,
+	body:not(.search-results) .tags-links,
+	body:not(.search-results) article:not(.sticky) .posted-on,
+	body:not(.search-results) article:not(.type-page) .comments-link,
+	body:not(.search-results) article:not(.type-page) .entry-footer .edit-link {
+		display: inline;
+		margin-bottom: 0;
+	}
+
+	body:not(.search-results) article:not(.type-page) .entry-footer > span:last-child {
+		margin-bottom: 0.5384615385em;
+	}
+
+	body:not(.search-results) article:not(.type-page) .entry-footer .avatar {
+		display: inline;
+		height: 21px;
+		margin: -0.1538461538em 0.5384615385em 0 0;
+		width: 21px;
+	}
+
+}
