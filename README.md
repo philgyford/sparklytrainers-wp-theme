@@ -1,6 +1,7 @@
 # Sparklytrainers WordPress theme
 
-This is a child theme of the Twenty Sixteen theme.
+This is a child theme of the Twenty Sixteen theme. In use at
+[www.sparklytrainers.com](http://www.sparklytrainers.com/).
 
 It adds:
 
