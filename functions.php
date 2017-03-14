@@ -175,7 +175,7 @@ function sparkly_genres_init() {
 			'query_var' => true,
 			'rewrite' => array(
 				// So Reviews in one Genre will be found at
-				// /reading/reading/science-fiction/
+				// /reading/genre/science-fiction/
 				'slug' => 'reading/genre',
 				'with_front' => false
 			),
