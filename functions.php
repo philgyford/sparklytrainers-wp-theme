@@ -52,28 +52,28 @@ function sparkly_create_review_post_type() {
 
 	// Matching nice URLs to the URLs WP will use to get review(s)...
 
+	// All reviews from one day:
+	add_rewrite_rule(
+		'^reading/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})(/page/([0-9]+))?/?$',
+		'index.php?post_type=sparkly_review&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[5]',
+		'top'
+	);
 	// An individual review:
 	add_rewrite_rule(
 		'^reading/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/?$',
 		'index.php?post_type=sparkly_review&name=$matches[4]',
 		'top'
 	);
-	// All reviews from one day:
-	add_rewrite_rule(
-		'^reading/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$',
-		'index.php?post_type=sparkly_review&year=$matches[1]&monthnum=$matches[2]&day=$matches[3]',
-		'top'
-	);
 	// All reviews from one month:
 	add_rewrite_rule(
-		'^reading/([0-9]{4})/([0-9]{1,2})/?$',
-		'index.php?post_type=sparkly_review&year=$matches[1]&monthnum=$matches[2]',
+		'^reading/([0-9]{4})/([0-9]{1,2})(/page/([0-9]+))?/?$',
+		'index.php?post_type=sparkly_review&year=$matches[1]&monthnum=$matches[2]&paged=$matches[4]',
 		'top'
 	);
 	// All reviews from one year:
 	add_rewrite_rule(
-		'^reading/([0-9]{4})/?$',
-		'index.php?post_type=sparkly_review&year=$matches[1]',
+		'^reading/([0-9]{4})(/page/([0-9]+))?/?$',
+		'index.php?post_type=sparkly_review&year=$matches[1]&paged=$matches[3]',
 		'top'
 	);
 }
