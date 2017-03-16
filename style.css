@@ -95,6 +95,27 @@ body:not(.custom-background-image):before, body:not(.custom-background-image):af
 	padding-bottom: 0;
 }
 
+blockquote {
+  font-size: 16px;
+  font-size: 1rem;
+}
+.entry-content blockquote:not(.alignleft):not(.alignright),
+.entry-summary blockquote,
+.comment-content blockquote {
+  margin-left: 0;
+}
+
+.entry-content ul,
+.entry-summary ul,
+.comment-content ul {
+  margin-left: 20px;
+}
+.entry-content ol,
+.entry-summary ol,
+.comment-content ol {
+  margin-left: 40px;
+}
+
 
 /**
  * Override twentysixteen putting the entry footer on the left of the entry
